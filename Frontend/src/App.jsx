@@ -24,13 +24,18 @@ const App = () => {
 
     try {
       setLoading(true);
-      const response = await axios.post("http://localhost:3001/upload", formData, {
+      // const response = await axios.post("http://localhost:3001/upload", formData, {
+      //   headers: { "Content-Type": "multipart/form-data" },
+      // });
+      let url = import.meta.env.VITE_GLOBAL_API_URL;
+      // console.log(url);
+      const response = await axios.post(url, formData, {
         headers: { "Content-Type": "multipart/form-data" },
       });
       setData(response.data);
     } catch (err) {
       setError("Failed to process the PDF");
-      console.error(err);
+      console.error(err.message);
     } finally {
       setLoading(false);
     }
