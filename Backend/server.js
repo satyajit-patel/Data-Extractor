@@ -23,10 +23,6 @@ const extractData = (text) => {
   };
 };
 
-app.use('/', (req, res) => {
-  res.send("Yeah I'am Bat Man");
-});
-
 app.post("/upload", upload.single("pdf"), async (req, res) => {
   try {
     if (!req.file) return res.status(400).send({ error: "No PDF uploaded" });
@@ -44,6 +40,10 @@ app.post("/upload", upload.single("pdf"), async (req, res) => {
     console.error("Error processing PDF:", error);
     return res.status(500).send({ error: "Error processing PDF" });
   }
+});
+
+app.use('/', (req, res) => {
+  res.send("Yeah I'am Bat Man");
 });
 
 app.listen(port, () => {
