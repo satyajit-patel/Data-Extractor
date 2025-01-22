@@ -3,7 +3,8 @@
 This project is a simple PDF data extraction system designed to automatically extract specific details from a PDF (e.g., Name, Phone Number, Address) and populate them into a frontend form. 
 
 ## Live Demo
-Check out the live demo here: [PDF Data Extractor](https://data-extractor-two.vercel.app/)
+Check out the live demo here: <a href="https://data-extractor-git-master-satyajit-patels-projects.vercel.app/" target="_blank" rel="link">PDF Data Extractor</a>
+
 
 ## Features
 - Upload PDF files from the frontend.
