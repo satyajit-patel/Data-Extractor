@@ -1,0 +1,15 @@
+
+
+Assignment File for Demo Use 
+ 
+ 
+Name : John Doe  
+ 
+Phone : +1 (620) 130-7224  
+ 
+Address : 447 Sutter St 3rd Floor, San Francisco, CA 94108, United States 
+ 
+Role : Software Developer 
+ 
+ 
+ 
